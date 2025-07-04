@@ -29,38 +29,38 @@
 
                 document.querySelectorAll('.video-wrapper-syJsMl').forEach(videoWrapper => {
 
-                    const parentClassName = videoWrapper.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.className;
+                    const grandParent1 = videoWrapper.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
 
-                    if (parentClassName == 'video-record-content-dejFeW') {
+                    if (grandParent1.className == 'video-record-content-dejFeW') {
 
-                        const checkBtn1 = videoWrapper.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.querySelector('.noWaterMarkDownloadVideoButton');
+                        const checkBtn1 = grandParent1.querySelector('.noWaterMarkDownloadVideoButton');
 
                         if (!checkBtn1) {
-
-                            const fileName = videoWrapper.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.previousSibling.querySelector('.prompt-DO1VXC').textContent;
-
+                            const promptNode = grandParent1.parentNode.previousSibling.querySelector('.prompt-DO1VXC');
+                            const fileName = getFileName(promptNode);
                             const downloadVideoButton = generateDownloadVideoButton(fileName);
                             downloadVideoButton.addEventListener('click', async () => {
                                 getCrossOriginVideo(videoWrapper, downloadVideoButton, fileName);
                             });
 
-                            videoWrapper.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(downloadVideoButton);
+                            grandParent1.appendChild(downloadVideoButton);
                         }
-                    } else if (parentClassName.includes('lv-modal')) {
+                    } else if (grandParent1.className.includes('lv-modal')) {
+                        const grandParent2 = videoWrapper.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
 
-                        const checkBtn2 = videoWrapper.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.querySelector('.publish-button-LkMPnt').querySelector('.noWaterMarkDownloadVideoButton');
+                        const checkBtn2 = grandParent2.querySelector('.publish-button-LkMPnt').querySelector('.noWaterMarkDownloadVideoButton');
 
                         if (!checkBtn2) {
 
-                            const fileName = videoWrapper.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.querySelector('.prompt-value-text-Lf5Gx7').textContent;
-
+                            const promptNode = grandParent2.querySelector('.prompt-value-text-Lf5Gx7');
+                            const fileName = getFileName(promptNode);
                             const downloadVideoButton = generateDownloadVideoButton(fileName);
 
                             downloadVideoButton.addEventListener('click', async () => {
                                 getCrossOriginVideo(videoWrapper, downloadVideoButton, fileName);
                             });
 
-                            videoWrapper.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.querySelector('.publish-button-LkMPnt').appendChild(downloadVideoButton);
+                            grandParent2.querySelector('.publish-button-LkMPnt').appendChild(downloadVideoButton);
                         }
 
                     } else {
@@ -130,4 +130,30 @@ function generateDownloadVideoButton(fileName) {
     downloadVideoButton.style.display = 'inline-block';
 
     return downloadVideoButton;
+}
+
+function getFileName(promptNode) {
+    let fileName;
+
+    if (promptNode && promptNode.textContent != '无提示词') {
+        fileName = promptNode.textContent;
+    } else {
+        fileName = '无提示词-' + getYmdHMS();
+    }
+
+    return fileName;
+}
+
+function getYmdHMS() {
+    const date = new Date();
+    const Y = date.getFullYear();
+    const m = String(date.getMonth() + 1).padStart(2, '0');
+    const d = String(date.getDate()).padStart(2, '0');
+    const H = String(date.getHours()).padStart(2, '0');
+    const M = String(date.getMinutes()).padStart(2, '0');
+    const S = String(date.getSeconds()).padStart(2, '0');
+
+    const result = `${Y}${m}${d}${H}${M}${S}`;
+
+    return result;
 }
