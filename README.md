@@ -42,10 +42,13 @@
 脚本可正确在以下用户脚本管理器中运行
 
 - Tampermonkey: 5.3.3
+- Tampermonkey Legacy (MV2): 5.1.1
 
 脚本可正确在以下浏览器中运行。
 
 - Firefox: 140.0.2
+- Firefox ESR: 115.25.0esr (Win7 可用)
+- Chrome: 109.0.5414.120 (Win7 可用)
 
 ------
 
