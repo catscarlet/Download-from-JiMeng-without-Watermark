@@ -4,7 +4,7 @@
 // @namespace       https://github.com/catscarlet/Download-from-JiMeng-without-Watermark
 // @description     从即梦AI（jimeng.jianying.com）下载无水印视频. Download Origin Video from jimeng.jianying.com without Watermark
 // @description:en  Download Origin Video from jimeng.jianying.com without Watermark. 从即梦AI（jimeng.jianying.com）下载无水印视频
-// @version         0.0.1
+// @version         0.0.2
 // @author          catscarlet
 // @license         GNU Affero General Public License v3.0
 // @match           https://jimeng.jianying.com/ai-tool/*
@@ -43,7 +43,7 @@
                                 getCrossOriginVideo(videoWrapper, downloadVideoButton, fileName);
                             });
 
-                            grandParent1.appendChild(downloadVideoButton);
+                            grandParent1.append(downloadVideoButton);
                         }
                     } else if (grandParent1.className.includes('lv-modal')) {
                         const grandParent2 = videoWrapper.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
@@ -60,7 +60,7 @@
                                 getCrossOriginVideo(videoWrapper, downloadVideoButton, fileName);
                             });
 
-                            grandParent2.querySelector('.publish-button-LkMPnt').appendChild(downloadVideoButton);
+                            grandParent2.querySelector('.publish-button-LkMPnt').prepend(downloadVideoButton);
                         }
 
                     } else {
