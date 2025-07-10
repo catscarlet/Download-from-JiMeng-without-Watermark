@@ -1,6 +1,14 @@
 # 从即梦AI下载无水印视频 Download Origin Video from JiMeng without Watermark
 
-这是一个可以让你从 _[即梦AI（jimeng.jianying.com）](https://jimeng.jianying.com)_ 下载无水印视频 的 userscript 。
+**即梦已经封杀了从网站上通过下载预览视频的方式获取无水印视频的方法，此脚本已因为即梦的更新而失效。**
+
+目前网页端给出的预览视频已自带水印，且其 *下载* 功能下载的内容会在预览视频上再次增加水印。
+
+请大家自行找其他方法获取 从即梦下载无水印视频 的方法。
+
+---------
+
+这曾是一个可以让你 _[即梦AI（jimeng.jianying.com）](https://jimeng.jianying.com)_ 下载无水印视频 的 userscript 。
 
 **重要提示**：此脚本可能会随着 _[即梦AI（jimeng.jianying.com）](https://jimeng.jianying.com)_ 网站的更新而失效。
 
@@ -68,7 +76,7 @@
 
 ## 源码
 
-Github： <https://github.com/catscarlet/Download-Origin-Image-from-Doubao-without-Watermark>
+Github： <https://github.com/catscarlet/Download-from-JiMeng-without-Watermark>
 
 ------
 

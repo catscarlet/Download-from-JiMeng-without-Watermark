@@ -4,7 +4,7 @@
 // @namespace       https://github.com/catscarlet/Download-from-JiMeng-without-Watermark
 // @description     从即梦AI（jimeng.jianying.com）下载无水印视频. Download Origin Video from jimeng.jianying.com without Watermark
 // @description:en  Download Origin Video from jimeng.jianying.com without Watermark. 从即梦AI（jimeng.jianying.com）下载无水印视频
-// @version         0.0.2
+// @version         0.0.3
 // @author          catscarlet
 // @license         GNU Affero General Public License v3.0
 // @match           https://jimeng.jianying.com/ai-tool/*
@@ -119,8 +119,8 @@ async function getCrossOriginVideo(videoWrapper, downloadVideoButton, fileName) 
 function generateDownloadVideoButton(fileName) {
     const downloadVideoButton = document.createElement('div');
     downloadVideoButton.className = 'noWaterMarkDownloadVideoButton';
-    downloadVideoButton.title = '下载文件名为「' + fileName + '」的 无水印视频文件';
-    downloadVideoButton.textContent = '无水印视频下载';
+    downloadVideoButton.title = '下载文件名为「' + fileName + '」的 预览视频文件';
+    downloadVideoButton.textContent = '预览视频下载';
     downloadVideoButton.style.backgroundColor = 'blue';
     downloadVideoButton.style.color = 'white';
     downloadVideoButton.style.padding = '8px 12px';
