@@ -1,20 +1,18 @@
 # 从即梦AI下载无水印视频 Download Origin Video from JiMeng without Watermark
 
-**即梦已经封杀了从网站上通过下载预览视频的方式获取无水印视频的方法，此脚本已因为即梦的更新而失效。**
+~~即梦已经封杀了从网站上通过下载预览视频的方式获取无水印视频的方法，此脚本已因为即梦的更新而失效。~~
 
-目前网页端给出的预览视频已自带水印，且其 *下载* 功能下载的内容会在预览视频上再次增加水印。
+~~目前网页端给出的预览视频已自带水印，且其 *下载* 功能下载的内容会在预览视频上再次增加水印。~~
 
-请大家自行找其他方法获取 从即梦下载无水印视频 的方法。
+~~请大家自行找其他方法获取 从即梦下载无水印视频 的方法。~~
 
 ---------
 
-这曾是一个可以让你 _[即梦AI（jimeng.jianying.com）](https://jimeng.jianying.com)_ 下载无水印视频 的 userscript 。
+这 ~曾是~ 一个可以让你 _[即梦AI（jimeng.jianying.com）](https://jimeng.jianying.com)_ 下载无水印视频 的 userscript 。
 
 **重要提示**：此脚本可能会随着 _[即梦AI（jimeng.jianying.com）](https://jimeng.jianying.com)_ 网站的更新而失效。
 
 ------
-
-
 
 ## 使用说明
 
@@ -39,11 +37,23 @@
 
 ### 使用
 
-成功安装后，在生成页面的视频内容下会新增一个 **「无水印视频下载」** 按钮。在视频详情页的右上角操作区也会新增一个 **「无水印视频下载」** 按钮。点击后会下载文件名为 _提示词_ 的无水印视频文件。如果提示词为空，则文件名将变为 _无提示词+当前页面的时间戳_ 。
+#### 1. 打开即梦的去除水印
+
+首先在即梦的界面，右下角菜单中点击【AI生成水印设置】，启用【去除水印】
+
+![screenshot_remove_watermark_btn-p1.webp](screenshots/screenshot_remove_watermark_btn-p1.webp)
+
+![screenshot_remove_watermark_btn-p2.webp](screenshots/screenshot_remove_watermark_btn-p2.webp)
+
+#### 2. 打开即梦的去除水印
+
+成功安装本脚本后后，在生成页面的视频内容下会新增一个 **「无水印视频下载」** 按钮。在视频详情页的右上角操作区也会新增一个 **「无水印视频下载」** 按钮。点击后会下载文件名为 _提示词_ 的无水印视频文件。如果提示词为空，则文件名将变为 _无提示词+当前页面的时间戳_ 。
 
 ![screenshot1.webp](screenshots/screenshot1.webp)
 
 ![screenshot2.webp](screenshots/screenshot2.webp)
+
+**请遵守法律、行政法规，尊重社会公德和伦理道德。如您生成或使用的内容导致公众混淆或者误认，因此所发生的后果和责任均由您自行承担。**
 
 ### 兼容性
 
