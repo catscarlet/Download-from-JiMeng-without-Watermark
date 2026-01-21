@@ -8,7 +8,7 @@
 
 ---------
 
-这 ~曾是~ 一个可以让你 _[即梦AI（jimeng.jianying.com）](https://jimeng.jianying.com)_ 下载无水印视频 的 userscript 。
+这 ~~曾是~~ 一个可以让你 _[即梦AI（jimeng.jianying.com）](https://jimeng.jianying.com)_ 下载无水印视频 的 userscript 。
 
 **重要提示**：此脚本可能会随着 _[即梦AI（jimeng.jianying.com）](https://jimeng.jianying.com)_ 网站的更新而失效。
 
