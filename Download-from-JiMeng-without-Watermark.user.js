@@ -110,7 +110,7 @@ async function getCrossOriginVideo(videoWrapper, downloadVideoButton, fileName) 
             downloadVideoButton.style.backgroundColor = btnOriginStyle.backgroundColor;
         }, 1000);
     } catch (error) {
-        alert('图片加载失败，请确保图片服务器开启了 CORS 支持。');
+        alert('加载失败，请确保服务器开启了 CORS 支持。');
         downloadVideoButton.style.cursor = btnOriginStyle.cursor;
         downloadVideoButton.style.backgroundColor = btnOriginStyle.backgroundColor;
     }
