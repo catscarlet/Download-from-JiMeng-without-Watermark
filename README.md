@@ -78,11 +78,11 @@
 
 16:9
 
-![clip1-all.webp](screenshots/clip1-all.webp)
+![comparison_16to9.webp](screenshots/comparison_16to9.webp)
 
 9:16
 
-![clip2-all.webp](screenshots/clip2-all.webp)
+![comparison_16to9.webp](screenshots/comparison_9to16.webp)
 
 ------
 
