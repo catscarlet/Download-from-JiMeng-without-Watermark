@@ -1,4 +1,4 @@
-# 从即梦AI下载无水印视频 Download Origin Video from JiMeng without Watermark
+# 从即梦AI下载无水印视频和图片 Download Origin Video from JiMeng without Watermark
 
 ~~即梦已经封杀了从网站上通过下载预览视频的方式获取无水印视频的方法，此脚本已因为即梦的更新而失效。~~
 
@@ -15,6 +15,8 @@
 ------
 
 ## 使用说明
+
+**请遵守法律、行政法规，尊重社会公德和伦理道德。如您生成或使用的内容导致公众混淆或者误认，因此所发生的后果和责任均由您自行承担。**
 
 ### 安装
 
@@ -47,15 +49,21 @@
 
 注意：只有在启用去除水印之后，新生成的内容才不具有左上角AI水印。
 
-#### 2. 无水印预览文件下载
+#### 2. 无水印预览视频下载
 
 成功安装本脚本后，在生成页面的视频内容下会新增一个 **「预览视频下载」** 按钮。在视频详情页的右上角操作区也会新增一个 **「预览视频下载」** 按钮。点击后会下载文件名为 _提示词_ 的无水印视频文件。如果提示词为空，则文件名将变为 _无提示词+当前页面的时间戳_ 。
 
-![screenshot1.webp](screenshots/screenshot1.webp)
+![screenshot_video_download_btn_in_timeline.webp](screenshots/screenshot_video_download_btn_in_timeline.webp)
 
-![screenshot2.webp](screenshots/screenshot2.webp)
+![screenshot_video_download_btn_in_detail.webp](screenshots/screenshot_video_download_btn_in_detail.webp)
 
-**请遵守法律、行政法规，尊重社会公德和伦理道德。如您生成或使用的内容导致公众混淆或者误认，因此所发生的后果和责任均由您自行承担。**
+#### 3. 无水印预览图片下载
+
+与下载 **无水印预览视频** 不同，下载 **无水印预览图片** 需要用户点击对应的图片，然后在图片详情页中，**再次** 点击预览图，这时在新打开的全屏预览图片上才会出现 **「下载预览图片」** 按钮。点击后会下载文件名为 _提示词+当前页面的时间戳_ 的无水印视频文件。如果提示词为空，则文件名将变为 _无提示词+当前页面的时间戳_ 。默认文件格式为 `WebP` 。
+
+![screenshot_image_download_btin_in_detail_1.webp](screenshots/screenshot_image_download_btin_in_detail_1.webp)
+
+![screenshot_image_download_btin_in_detail_2.webp](screenshots/screenshot_image_download_btin_in_detail_2.webp)
 
 ### 兼容性
 
@@ -72,17 +80,15 @@
 
 ------
 
-## 截图
+## 效果图
 
-### 效果图
+### 16:9
 
-16:9
+![comparison_16to9.webp](screenshots/comparison_16to9_010.webp)
 
-![comparison_16to9.webp](screenshots/comparison_16to9.webp)
+### 9:16
 
-9:16
-
-![comparison_16to9.webp](screenshots/comparison_9to16.webp)
+![comparison_16to9.webp](screenshots/comparison_9to16_010.webp)
 
 ------
 
