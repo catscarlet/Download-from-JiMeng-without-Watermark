@@ -6,9 +6,11 @@
 
 ~~请大家自行找其他方法获取 从即梦下载无水印视频 的方法。~~
 
+字节&即梦 目前提供了去除预览视频水印的选项。现在 **又能** 使用下载预览视频的方式下载无水印图片视频了。
+
 ---------
 
-这 ~~曾是~~ 一个可以让你 _[即梦AI（jimeng.jianying.com）](https://jimeng.jianying.com)_ 下载无水印视频 的 userscript 。
+这 ~~曾~~ 是一个可以让你 _[即梦AI（jimeng.jianying.com）](https://jimeng.jianying.com)_ 下载无水印视频和图片 的 userscript 。
 
 **重要提示**：此脚本可能会随着 _[即梦AI（jimeng.jianying.com）](https://jimeng.jianying.com)_ 网站的更新而失效。
 
@@ -64,6 +66,8 @@
 ![screenshot_image_download_btin_in_detail_1.webp](screenshots/screenshot_image_download_btin_in_detail_1.webp)
 
 ![screenshot_image_download_btin_in_detail_2.webp](screenshots/screenshot_image_download_btin_in_detail_2.webp)
+
+（请注意，Win7/Win8/Win8.1 以及之前的操作系统不原生支持 WebP 图片格式，Win10 仅对 WebP 格式部分原生支持。如有需要，请自行使用 **ImageMagick** 或 **GIMP** 或 其他图片处理工具 转换图片格式）
 
 ### 兼容性
 
