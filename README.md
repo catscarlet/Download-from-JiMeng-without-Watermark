@@ -71,16 +71,20 @@
 
 ### 兼容性
 
-脚本可正确在以下用户脚本管理器中运行
+脚本可正确在以下用户脚本管理器中运行：
 
 - Tampermonkey: 5.3.3
 - Tampermonkey Legacy (MV2): 5.1.1
 
-脚本可正确在以下浏览器中运行。
+脚本可正确在以下浏览器中运行：
 
 - Firefox: 140.0.2
 - Firefox ESR: 115.25.0esr (Win7 可用)
 - Chrome: 109.0.5414.120 (Win7 可用)
+
+### 已知问题
+
+- 关于 Seedance 2.0 Fast「预览视频」与「官方下载」两个文件大小差别很大的情况：<https://github.com/catscarlet/Download-from-JiMeng-without-Watermark/discussions/3#discussion-9719092>
 
 ------
 
