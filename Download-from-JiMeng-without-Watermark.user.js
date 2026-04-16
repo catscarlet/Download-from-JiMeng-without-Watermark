@@ -51,7 +51,6 @@
                         const checkBtn2 = grandParent2.querySelector('.publish-button-C80dLI').querySelector('.noWaterMarkDownloadVideoButton');
 
                         if (!checkBtn2) {
-
                             const promptNode = grandParent2.querySelector('.prompt-value-p42svP');
                             const fileName = getVideoFileName(promptNode);
                             const downloadVideoButton = generateDownloadVideoButton(fileName);
@@ -214,6 +213,8 @@ function getVideoFileName(promptNode) {
         fileName = '无提示词-' + getYmdHMS();
     }
 
+    fileName = fileName.replace(/[\n\r]/g, '');
+
     return fileName;
 }
 
@@ -227,6 +228,8 @@ function getImageFileName() {
     } else {
         fileName = '无提示词-' + getYmdHMS();
     }
+
+    fileName = fileName.replace(/[\n\r]/g, '');
 
     return fileName;
 }
