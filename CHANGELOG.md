@@ -2,6 +2,11 @@
 
 (from new to old)
 
+## 0.1.1
+
+- Update querySelector to match JiMeng update.
+- Format download filename.
+
 ## 0.1.0
 
 - Support **Image Download** now!
