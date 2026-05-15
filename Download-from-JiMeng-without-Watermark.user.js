@@ -27,16 +27,16 @@
 
             debounceTimer = setTimeout(() => {
 
-                document.querySelectorAll('.video-wrapper-NV4xzp').forEach(videoWrapper => {
+                document.querySelectorAll('.video-wrapper-uX14LE').forEach(videoWrapper => {
 
                     const grandParent1 = videoWrapper.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
 
-                    if (grandParent1.className == 'video-record-content-Z9INf6') {
+                    if (grandParent1.className == 'video-record-content-TW8wqV') {
 
                         const checkBtn1 = grandParent1.querySelector('.noWaterMarkDownloadVideoButton');
 
                         if (!checkBtn1) {
-                            const promptNode = grandParent1.parentNode.previousSibling.querySelector('.prompt-ox_Q4w');
+                            const promptNode = grandParent1.parentNode.previousSibling.querySelector('.prompt-ZVqVxN');
                             const fileName = getVideoFileName(promptNode);
                             const downloadVideoButton = generateDownloadVideoButton(fileName);
                             downloadVideoButton.addEventListener('click', async () => {
@@ -45,13 +45,13 @@
 
                             grandParent1.append(downloadVideoButton);
                         }
-                    } else if (!grandParent1.className.includes('video-element-hohP7p')) {
+                    } else if (!grandParent1.className.includes('video-element-mB9kIj')) {
                         const grandParent2 = videoWrapper.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
 
-                        const checkBtn2 = grandParent2.querySelector('.publish-button-jPQ6gf').querySelector('.noWaterMarkDownloadVideoButton');
+                        const checkBtn2 = grandParent2.querySelector('.publish-button-R3RwZe').querySelector('.noWaterMarkDownloadVideoButton');
 
                         if (!checkBtn2) {
-                            const promptNode = grandParent2.querySelector('.prompt-value-iSLqEB');
+                            const promptNode = grandParent2.querySelector('.prompt-value-T1xHov');
                             const fileName = getVideoFileName(promptNode);
                             const downloadVideoButton = generateDownloadVideoButton(fileName);
 
@@ -59,7 +59,7 @@
                                 getCrossOriginVideo(videoWrapper, downloadVideoButton, fileName);
                             });
 
-                            grandParent2.querySelector('.publish-button-jPQ6gf').prepend(downloadVideoButton);
+                            grandParent2.querySelector('.publish-button-R3RwZe').prepend(downloadVideoButton);
                         }
 
                     } else {
@@ -67,7 +67,7 @@
 
                 });
 
-                document.querySelectorAll('.preview-_FMIbr').forEach((imgElement, imgElementIndex) => {
+                document.querySelectorAll('.preview-mlBjQj').forEach((imgElement, imgElementIndex) => {
                     const container = imgElement.parentNode;
 
                     const hasButton = imgElement.hasAttribute('data-preview-button-added');
@@ -220,7 +220,7 @@ function getVideoFileName(promptNode) {
 }
 
 function getImageFileName() {
-    const promptNode = document.querySelector('.prompt-value-iSLqEB');
+    const promptNode = document.querySelector('.prompt-value-T1xHov');
 
     let fileName;
 
