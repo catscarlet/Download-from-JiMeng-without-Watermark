@@ -48,7 +48,8 @@
                     } else if (!grandParent1.className.includes('video-element-mB9kIj')) {
                         const grandParent2 = videoWrapper.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
 
-                        const checkBtn2 = grandParent2.querySelector('.publish-button-R3RwZe').querySelector('.noWaterMarkDownloadVideoButton');
+                        const publishButton = grandParent2.querySelector('.publish-button-R3RwZe');
+                        const checkBtn2 = publishButton.querySelector('.noWaterMarkDownloadVideoButton');
 
                         if (!checkBtn2) {
                             const promptNode = grandParent2.querySelector('.prompt-value-T1xHov');
@@ -59,7 +60,7 @@
                                 getCrossOriginVideo(videoWrapper, downloadVideoButton, fileName);
                             });
 
-                            grandParent2.querySelector('.publish-button-R3RwZe').prepend(downloadVideoButton);
+                            publishButton.prepend(downloadVideoButton);
                         }
 
                     } else {
@@ -75,7 +76,8 @@
                         return;
                     }
 
-                    const fileName = getImageFileName();
+                    const promptNode = document.querySelector('.prompt-value-T1xHov');
+                    const fileName = getImageFileName(promptNode);
                     const downloadImageButton = generateDownloadImageButton(fileName);
                     downloadImageButton.addEventListener('click', async (e) => {
                         e.stopPropagation();
@@ -219,9 +221,7 @@ function getVideoFileName(promptNode) {
     return fileName;
 }
 
-function getImageFileName() {
-    const promptNode = document.querySelector('.prompt-value-T1xHov');
-
+function getImageFileName(promptNode) {
     let fileName;
 
     if (promptNode && promptNode.textContent != '无提示词') {
