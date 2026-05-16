@@ -2,6 +2,10 @@
 
 (from new to old)
 
+## 0.1.2
+
+- Update querySelector to match JiMeng update.
+
 ## 0.1.1
 
 - Update querySelector to match JiMeng update.
