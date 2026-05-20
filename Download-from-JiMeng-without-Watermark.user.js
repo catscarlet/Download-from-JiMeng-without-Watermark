@@ -27,16 +27,16 @@
 
             debounceTimer = setTimeout(() => {
 
-                document.querySelectorAll('.video-wrapper-uX14LE').forEach(videoWrapper => {
+                document.querySelectorAll('.video-wrapper-C3JUiL').forEach(videoWrapper => {
 
                     const grandParent1 = videoWrapper.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
 
-                    if (grandParent1.className == 'video-record-content-TW8wqV') {
+                    if (grandParent1.className == 'video-record-content-NbHtLI') {
 
                         const checkBtn1 = grandParent1.querySelector('.noWaterMarkDownloadVideoButton');
 
                         if (!checkBtn1) {
-                            const promptNode = grandParent1.parentNode.previousSibling.querySelector('.prompt-ZVqVxN');
+                            const promptNode = grandParent1.parentNode.previousSibling.querySelector('.prompt-hvsbwJ');
                             const fileName = getVideoFileName(promptNode);
                             const downloadVideoButton = generateDownloadVideoButton(fileName);
                             downloadVideoButton.addEventListener('click', async () => {
@@ -45,14 +45,14 @@
 
                             grandParent1.append(downloadVideoButton);
                         }
-                    } else if (!grandParent1.className.includes('video-element-mB9kIj')) {
+                    } else if (!grandParent1.className.includes('video-element-JJEyfw')) {
                         const grandParent2 = videoWrapper.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
 
-                        const publishButton = grandParent2.querySelector('.publish-button-R3RwZe');
+                        const publishButton = grandParent2.querySelector('.publish-button-lnPMEB');
                         const checkBtn2 = publishButton.querySelector('.noWaterMarkDownloadVideoButton');
 
                         if (!checkBtn2) {
-                            const promptNode = grandParent2.querySelector('.prompt-value-T1xHov');
+                            const promptNode = grandParent2.querySelector('.prompt-value-HTEDXT');
                             const fileName = getVideoFileName(promptNode);
                             const downloadVideoButton = generateDownloadVideoButton(fileName);
 
@@ -68,7 +68,7 @@
 
                 });
 
-                document.querySelectorAll('.preview-mlBjQj').forEach((imgElement, imgElementIndex) => {
+                document.querySelectorAll('.preview-BLx_xQ').forEach((imgElement, imgElementIndex) => {
                     const container = imgElement.parentNode;
 
                     const hasButton = imgElement.hasAttribute('data-preview-button-added');
@@ -76,7 +76,7 @@
                         return;
                     }
 
-                    const promptNode = document.querySelector('.prompt-value-T1xHov');
+                    const promptNode = document.querySelector('.prompt-value-HTEDXT');
                     const fileName = getImageFileName(promptNode);
                     const downloadImageButton = generateDownloadImageButton(fileName);
                     downloadImageButton.addEventListener('click', async (e) => {
