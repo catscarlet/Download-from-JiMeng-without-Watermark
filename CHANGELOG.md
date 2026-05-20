@@ -2,6 +2,11 @@
 
 (from new to old)
 
+## 0.1.3
+
+- Update querySelector to match JiMeng update.
+- Minor changes about dom queries.
+
 ## 0.1.2
 
 - Update querySelector to match JiMeng update.
