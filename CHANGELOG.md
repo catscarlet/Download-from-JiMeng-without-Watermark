@@ -2,6 +2,13 @@
 
 (from new to old)
 
+## 0.1.4
+
+- Update querySelector to match JiMeng update.
+- New feature: WorkplacePrefix in Filename
+
+The WorkplacePrefix feature only works when you download in `/ai-tool/generate?workspace`. It does not works in `/ai-tool/asset`. Free free to set `workspacePrefixOn` to `0` if you feel like to turn it off.
+
 ## 0.1.3
 
 - Update querySelector to match JiMeng update.

@@ -89,6 +89,7 @@
 ### 已知问题
 
 - 关于 Seedance 2.0 Fast「预览视频」与「官方下载」两个文件大小差别很大的情况：<https://github.com/catscarlet/Download-from-JiMeng-without-Watermark/discussions/3#discussion-9719092>
+- 「扩图」功能无法获得原图提示词；「局部重绘」只能获得重绘提示词；
 
 ------
 
