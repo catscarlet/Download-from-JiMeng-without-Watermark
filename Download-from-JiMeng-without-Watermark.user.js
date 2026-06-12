@@ -12,6 +12,8 @@
 // @grant           none
 // ==/UserScript==
 
+const workspacePrefixOn = 1; //Set 0 to turn off workspacePrefix. The workspacePrefix feature only works when you download in `/ai-tool/generate?workspace`. Does not works in `/ai-tool/asset`
+
 const imagePreviewSelectors = '.preview-am_xs9';
 const videoDivSelectors = '.video-wrapper-lrHt9Q';
 const videoRecordContentClassname = 'video-record-content-pvbcDi';
@@ -215,13 +217,30 @@ function generateDownloadImageButton(fileName) {
     return downloadImageButton;
 }
 
+function getWorkplacePrefix() {
+
+    if (workspacePrefixOn == 0) {
+        return '';
+    }
+
+    let url = new URL(location.href);
+    let workspace = url.searchParams.get('workspace');
+    let workspaceStr = '';
+
+    if (workspace && workspace != 0) {
+        workspaceStr = workspace + '-';
+    }
+
+    return workspaceStr;
+}
 function getVideoFileName(promptNode) {
     let fileName;
+    let workspace = getWorkplacePrefix();
 
     if (promptNode && promptNode.textContent != '无提示词') {
-        fileName = promptNode.textContent;
+        fileName = '即梦无水印-' + workspace + promptNode.textContent;
     } else {
-        fileName = '无提示词-' + getYmdHMS();
+        fileName = '即梦无水印-' + workspace + '无提示词-' + getYmdHMS();
     }
 
     fileName = fileName.replace(/[\n\r]/g, '');
@@ -231,11 +250,12 @@ function getVideoFileName(promptNode) {
 
 function getImageFileName(promptNode) {
     let fileName;
+    let workspace = getWorkplacePrefix();
 
     if (promptNode && promptNode.textContent != '无提示词') {
-        fileName = '即梦无水印-' + promptNode.textContent + '-' + getYmdHMS();;
+        fileName = '即梦无水印-' + workspace + promptNode.textContent + '-' + getYmdHMS();;
     } else {
-        fileName = '无提示词-' + getYmdHMS();
+        fileName = '即梦无水印-' + workspace + '无提示词-' + getYmdHMS();
     }
 
     fileName = fileName.replace(/[\n\r]/g, '');
