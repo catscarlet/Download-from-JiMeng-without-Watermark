@@ -117,7 +117,7 @@ async function getCrossOriginVideo(videoWrapper, downloadVideoButton, fileName) 
     btnOriginStyle.cursor = downloadVideoButton.style.cursor;
     btnOriginStyle.backgroundColor = downloadVideoButton.style.backgroundColor;
 
-    downloadVideoButton.style.cursor = 'not-allowed';
+    downloadVideoButton.style.cursor = 'wait';
     downloadVideoButton.style.backgroundColor = 'grey';
 
     const fileUrl = videoWrapper.childNodes[0].src;
@@ -153,7 +153,7 @@ async function getCrossOriginImage(imgElement, downloadImageButton, fileName) {
     btnOriginStyle.cursor = downloadImageButton.style.cursor;
     btnOriginStyle.backgroundColor = downloadImageButton.style.backgroundColor;
 
-    downloadImageButton.style.cursor = 'not-allowed';
+    downloadImageButton.style.cursor = 'wait';
     downloadImageButton.style.backgroundColor = 'grey';
 
     const fileUrl = imgElement.src;
