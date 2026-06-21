@@ -1,9 +1,11 @@
 // ==UserScript==
 // @name            从即梦AI下载无水印视频和图片 Download Origin Video and Image from JiMeng without Watermark
+// @name:zh         从即梦AI下载无水印视频和图片 Download Origin Video and Image from JiMeng without Watermark
 // @name:en         Download Origin Video and Image from JiMeng without Watermark 从即梦AI下载无水印视频和图片
 // @namespace       https://github.com/catscarlet/Download-from-JiMeng-without-Watermark
-// @description     从即梦AI（jimeng.jianying.com）下载无水印视频和图片. Download Origin Video and Image from jimeng.jianying.com without Watermark
-// @description:en  Download Origin Video and Image from jimeng.jianying.com without Watermark. 从即梦AI（jimeng.jianying.com）下载无水印视频和图片
+// @description     从即梦AI（jimeng.jianying.com）下载无水印视频和图片。 Download Origin Video and Image from jimeng.jianying.com without Watermark
+// @description:zh  从即梦AI（jimeng.jianying.com）下载无水印视频和图片。 Download Origin Video and Image from jimeng.jianying.com without Watermark
+// @description:en  Download Origin Video and Image from jimeng.jianying.com without Watermark. 从即梦AI（jimeng.jianying.com）下载无水印视频和图片。
 // @version         0.1.4
 // @author          catscarlet
 // @license         GNU Affero General Public License v3.0
