@@ -2,19 +2,19 @@
 
 ~~即梦已经封杀了从网站上通过下载预览视频的方式获取无水印视频的方法，此脚本已因为即梦的更新而失效。~~
 
-~~目前网页端给出的预览视频已自带水印，且其 *下载* 功能下载的内容会在预览视频上再次增加水印。~~
+~~目前网页端给出的预览视频已自带水印，且其 _下载_ 功能下载的内容会在预览视频上再次增加水印。~~
 
 ~~请大家自行找其他方法获取 从即梦下载无水印视频 的方法。~~
 
 字节&即梦 目前提供了去除预览视频水印的选项。现在 **又能** 使用下载预览视频的方式下载无水印图片视频了。
 
----------
+* * *
 
 这 ~~曾~~ 是一个可以让你 _[即梦AI（jimeng.jianying.com）](https://jimeng.jianying.com)_ 下载无水印视频和图片 的 userscript 。
 
 **重要提示**：此脚本可能会随着 _[即梦AI（jimeng.jianying.com）](https://jimeng.jianying.com)_ 网站的更新而失效。
 
-------
+* * *
 
 ## 使用说明
 
@@ -26,9 +26,9 @@
 
 用户需先安装用户脚本管理器，推荐使用 **[篡改猴/油猴（Tampermonkey）](https://www.tampermonkey.net/)**：
 
-- [火狐附加组件](https://addons.mozilla.org/zh-CN/firefox/addon/tampermonkey/)
-- [Chrome 应用商店 扩展程序](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=zh-CN)
-- [Microsoft Edge 外接程序](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd?hl=zh-CN&gl=CN)
+-   [火狐附加组件](https://addons.mozilla.org/zh-CN/firefox/addon/tampermonkey/)
+-   [Chrome 应用商店 扩展程序](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=zh-CN)
+-   [Microsoft Edge 外接程序](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd?hl=zh-CN&gl=CN)
 
 或其他同类扩展程序。用户脚本管理器的安装等相关资料均可参见 [Greasy Fork](https://greasyfork.org/)。
 
@@ -36,9 +36,9 @@
 
 在完成安装用户脚本管理器后，安装本用户脚本。以下提供几个安装渠道：
 
-- 【推荐】Greasyfork脚本安装地址：<https://greasyfork.org/scripts/541644>，点击页面上的 _安装此脚本_ 即可。
-- （Greasyfork镜像站）Greasyfork.icu脚本安装地址：<https://greasyfork.icu/zh-CN/scripts/541644>，点击页面上的 _安装此脚本_ 即可。
-- 如果您访问 greasyfork.org 有困难，可以尝试这个 [GitHub链接](https://github.com/catscarlet/Download-from-JiMeng-without-Watermark/raw/refs/heads/main/Download-from-JiMeng-without-Watermark.user.js) 进行安装。注意这个链接指向的地址为本项目的仓库，对应的文件可能比 Greasyfork 要新且可能包含一些新功能和不稳定的更改。
+-   【推荐】Greasyfork脚本安装地址：<https://greasyfork.org/scripts/541644>，点击页面上的 _安装此脚本_ 即可。
+-   （Greasyfork镜像站）Greasyfork.icu脚本安装地址：<https://greasyfork.icu/zh-CN/scripts/541644>，点击页面上的 _安装此脚本_ 即可。
+-   如果您访问 greasyfork.org 有困难，可以尝试这个 [GitHub链接](https://github.com/catscarlet/Download-from-JiMeng-without-Watermark/raw/refs/heads/main/Download-from-JiMeng-without-Watermark.user.js) 进行安装。注意这个链接指向的地址为本项目的仓库，对应的文件可能比 Greasyfork 要新且可能包含一些新功能和不稳定的更改。
 
 请注意：本脚本仅在 「Greasyfork 」与「GitHub」上进行发布和维护。对于镜像站可能产生的包括且不限于安全相关的问题概不负责。
 
@@ -76,21 +76,21 @@
 
 脚本可正确在以下用户脚本管理器中运行：
 
-- Tampermonkey: 5.3.3
-- Tampermonkey Legacy (MV2): 5.1.1
+-   Tampermonkey: 5.3.3
+-   Tampermonkey Legacy (MV2): 5.1.1
 
 脚本可正确在以下浏览器中运行：
 
-- Firefox: 140.0.2
-- Firefox ESR: 115.25.0esr (Win7 可用)
-- Chrome: 109.0.5414.120 (Win7 可用)
+-   Firefox: 140.0.2
+-   Firefox ESR: 115.25.0esr (Win7 可用)
+-   Chrome: 109.0.5414.120 (Win7 可用)
 
 ### 已知问题
 
-- 关于 Seedance 2.0 Fast「预览视频」与「官方下载」两个文件大小差别很大的情况：<https://github.com/catscarlet/Download-from-JiMeng-without-Watermark/discussions/3#discussion-9719092>
-- 「扩图」功能无法获得原图提示词；「局部重绘」只能获得重绘提示词；
+-   关于 Seedance 2.0 Fast「预览视频」与「官方下载」两个文件大小差别很大的情况：<https://github.com/catscarlet/Download-from-JiMeng-without-Watermark/discussions/3#discussion-9719092>
+-   「扩图」功能无法获得原图提示词；「局部重绘」只能获得重绘提示词；
 
-------
+* * *
 
 ## 效果图
 
@@ -102,13 +102,13 @@
 
 ![comparison_16to9.webp](screenshots/comparison_9to16_010.webp)
 
-------
+* * *
 
 ## 源码
 
 Github： <https://github.com/catscarlet/Download-from-JiMeng-without-Watermark>
 
-------
+* * *
 
 ## LICENSE
 
