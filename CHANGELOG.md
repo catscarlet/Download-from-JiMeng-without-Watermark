@@ -2,6 +2,10 @@
 
 (from new to old)
 
+## 0.1.6
+
+- Update querySelector to match JiMeng update.
+
 ## 0.1.5
 
 - Change Button Downloading style to 'wait' for better visual effect
