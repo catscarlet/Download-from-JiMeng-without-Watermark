@@ -2,6 +2,13 @@
 
 (from new to old)
 
+## 0.1.9
+
+- Update querySelector to match JiMeng update.
+- Add comments for Selectors.
+
+It seems JiMeng updates its pages very often. If the script stops working because of the element name changing and there is no updating of this this script and you are also in a hurry, you can update the querySelector by yourself.
+
 ## 0.1.8
 
 - Update querySelector to match JiMeng update.
