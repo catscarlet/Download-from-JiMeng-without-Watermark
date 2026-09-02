@@ -16,12 +16,19 @@
 
 const workspacePrefixOn = 1; //Set 0 to turn off workspacePrefix. The workspacePrefix feature only works when you download in `/ai-tool/generate?workspace`. Does not works in `/ai-tool/asset`
 
+//图片预览图
 const imagePreviewSelectors = '.preview-Nz8SrK';
+//视频
 const videoDivSelectors = '.video-wrapper-spcP1_';
+//视频时间线
 const videoRecordContentClassname = 'video-record-content-gdPKEt';
+//视频时间线描述
 const videoPromptSelectors = '.prompt-rX6_7j';
+//视频在视频时间线
 const videoDivSelectorsClassname = 'video-element-WAGih4';
+//视频发布按钮
 const videoPublishButtonSelectors = '.publish-button-GhEPOe';
+//详情
 const promptValueSelectors = '.prompt-value-nApYeg';
 
 (function() {
