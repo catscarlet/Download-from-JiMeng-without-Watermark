@@ -247,12 +247,11 @@ function getVideoFileName(promptNode) {
     let workspace = getWorkplacePrefix();
 
     if (promptNode && promptNode.textContent != '无提示词') {
-        fileName = '即梦无水印-' + workspace + promptNode.textContent;
+        let promptText = safePromptText(promptNode.textContent, 59);
+        fileName = '即梦无水印-' + workspace + promptText;
     } else {
         fileName = '即梦无水印-' + workspace + '无提示词-' + getYmdHMS();
     }
-
-    fileName = fileName.replace(/[\n\r]/g, '');
 
     return fileName;
 }
@@ -262,12 +261,11 @@ function getImageFileName(promptNode) {
     let workspace = getWorkplacePrefix();
 
     if (promptNode && promptNode.textContent != '无提示词') {
-        fileName = '即梦无水印-' + workspace + promptNode.textContent + '-' + getYmdHMS();;
+        let promptText = safePromptText(promptNode.textContent, 45);
+        fileName = '即梦无水印-' + workspace + promptText + '-' + getYmdHMS();;
     } else {
         fileName = '即梦无水印-' + workspace + '无提示词-' + getYmdHMS();
     }
-
-    fileName = fileName.replace(/[\n\r]/g, '');
 
     return fileName;
 }
@@ -284,4 +282,18 @@ function getYmdHMS() {
     const result = `${Y}${m}${d}${H}${M}${S}`;
 
     return result;
+}
+
+function safePromptText(promptText, maxlength = 59) {
+    promptText = promptText.replace(/[\n\r]/g, '');
+    let promptTextSize = new Blob([promptText], {type: 'text/plain;charset=utf-8'}).size;
+
+    if (promptTextSize < 206) {
+
+        return promptText;
+    }
+
+    let promptTextShort = promptText.slice(0, maxlength) + '…';
+
+    return promptTextShort;
 }
