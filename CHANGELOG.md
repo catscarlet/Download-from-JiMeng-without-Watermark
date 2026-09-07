@@ -2,6 +2,11 @@
 
 (from new to old)
 
+## 0.2.0
+
+- Fix downloads fail caused by prompt too long.
+- Change the query select way to escape JiMeng's random updatings.
+
 ## 0.1.9
 
 - Update querySelector to match JiMeng update.
