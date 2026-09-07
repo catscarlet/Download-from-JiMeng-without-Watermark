@@ -17,19 +17,19 @@
 const workspacePrefixOn = 1; //Set 0 to turn off workspacePrefix. The workspacePrefix feature only works when you download in `/ai-tool/generate?workspace`. Does not works in `/ai-tool/asset`
 
 //图片预览图
-const imagePreviewSelectors = '.preview-Nz8SrK';
+const imagePreviewSelectors = 'img[class^="preview-"]';
 //视频
-const videoDivSelectors = '.video-wrapper-spcP1_';
+const videoDivSelectors = '[id^="dreamina-video-player-"]';
 //视频时间线
-const videoRecordContentClassname = 'video-record-content-gdPKEt';
+const videoRecordContentClassnamePrefix = 'video-record-content-';
 //视频时间线描述
-const videoPromptSelectors = '.prompt-rX6_7j';
+const videoPromptSelectors = 'span[class^="prompt-"]';
 //视频在视频时间线
-const videoDivSelectorsClassname = 'video-element-WAGih4';
+const videoDivSelectorsClassnamePrefix = 'video-element-';
 //视频发布按钮
-const videoPublishButtonSelectors = '.publish-button-GhEPOe';
+const videoPublishButtonSelectors = '[class^="publish-button-"]';
 //详情
-const promptValueSelectors = '.prompt-value-nApYeg';
+const promptValueSelectors = 'span[class^="prompt-value-container-"]';
 
 (function() {
     'use strict';
@@ -50,7 +50,7 @@ const promptValueSelectors = '.prompt-value-nApYeg';
 
                     const grandParent1 = videoWrapper.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
 
-                    if (grandParent1.className == videoRecordContentClassname) {
+                    if (grandParent1.className.includes(videoRecordContentClassnamePrefix)) {
 
                         const checkBtn1 = grandParent1.querySelector('.noWaterMarkDownloadVideoButton');
 
@@ -64,7 +64,7 @@ const promptValueSelectors = '.prompt-value-nApYeg';
 
                             grandParent1.append(downloadVideoButton);
                         }
-                    } else if (!grandParent1.className.includes('videoDivSelectorsClassname')) {
+                    } else if (!grandParent1.className.includes('videoDivSelectorsClassnamePrefix')) {
                         const grandParent2 = videoWrapper.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
 
                         const publishButton = grandParent2.querySelector(videoPublishButtonSelectors);
