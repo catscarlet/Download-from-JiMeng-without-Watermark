@@ -91,7 +91,8 @@ const promptValueSelectors = 'span[class^="prompt-value-container-"]';
                     const container = imgElement.parentNode;
 
                     const hasButton = imgElement.hasAttribute('data-preview-button-added');
-                    if (hasButton) {
+                    const hasDraggableAttr = imgElement.hasAttribute('draggable');
+                    if (hasButton || !hasDraggableAttr) {
                         return;
                     }
 
