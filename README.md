@@ -44,11 +44,13 @@
 
 ### 使用
 
+_（部分截图为旧版截图，不影响操作流程）_
+
 #### 1. 打开即梦的去除水印
 
-首先在即梦的界面，右下角菜单中点击【AI生成水印设置】，启用【去除水印】
+首先在即梦的界面，右上角点击头像展开菜单，然后点击【系统设置】中的【AI生成水印设置】，启用【去除水印】
 
-![screenshot_remove_watermark_btn-p1.webp](screenshots/screenshot_remove_watermark_btn-p1.webp)
+![screenshot_remove_watermark_btn-p1-20260910](screenshots/screenshot_remove_watermark_btn-p1-20260910.webp)
 
 ![screenshot_remove_watermark_btn-p2.webp](screenshots/screenshot_remove_watermark_btn-p2.webp)
 
