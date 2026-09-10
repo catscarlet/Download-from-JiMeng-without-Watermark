@@ -29,7 +29,7 @@ const videoDivSelectorsClassnamePrefix = 'video-element-';
 //视频发布按钮
 const videoPublishButtonSelectors = '[class^="publish-button-"]';
 //详情
-const promptValueSelectors = 'span[class^="prompt-value-container-"]';
+const promptValueSelectors = '[class^="prompt-value-container-"]';
 
 (function() {
     'use strict';
@@ -56,6 +56,11 @@ const promptValueSelectors = 'span[class^="prompt-value-container-"]';
 
                         if (!checkBtn1) {
                             const promptNode = grandParent1.parentNode.previousSibling.querySelector(videoPromptSelectors);
+                            if (!promptNode) {
+
+                                return false;
+                            }
+
                             const fileName = getVideoFileName(promptNode);
                             const downloadVideoButton = generateDownloadVideoButton(fileName);
                             downloadVideoButton.addEventListener('click', async () => {
@@ -68,10 +73,18 @@ const promptValueSelectors = 'span[class^="prompt-value-container-"]';
                         const grandParent2 = videoWrapper.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
 
                         const publishButton = grandParent2.querySelector(videoPublishButtonSelectors);
+                        if (!publishButton) {
+
+                            return false;
+                        }
                         const checkBtn2 = publishButton.querySelector('.noWaterMarkDownloadVideoButton');
 
                         if (!checkBtn2) {
                             const promptNode = grandParent2.querySelector(promptValueSelectors);
+                            if (!promptNode) {
+
+                                return false;
+                            }
                             const fileName = getVideoFileName(promptNode);
                             const downloadVideoButton = generateDownloadVideoButton(fileName);
 
