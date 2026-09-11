@@ -2,6 +2,12 @@
 
 (from new to old)
 
+## 0.2.1
+
+- **Support JiMeng's new webpages.**
+- Fix button not shows up in the new JiMeng webpages.
+- Fix "image download button shows on publish page".
+
 ## 0.2.0
 
 - Fix downloads fail caused by prompt too long.
